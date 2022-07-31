@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!-- native 可以将组件上的原生作用于组件的根节点 -->
+  <Zch-Button @click.native="clickHandler" size="mini" type="success" >登录</Zch-Button>
+  <Zch-Button>
+    <span>❤️</span>
+    注册
+  </Zch-Button>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data () {
+    return {
+
+    }
+  },
+
+  created () {
+
+  },
+
+  methods: {
+
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped lang='less'>
+
 </style>
